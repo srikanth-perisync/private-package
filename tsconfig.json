@@ -1,0 +1,85 @@
+// {
+//     "compilerOptions": {
+//         "target": "ESNext",
+//         "module": "ESNext",
+//         "lib": [
+//             "DOM",
+//             "ESNext"
+//         ],
+//         "jsx": "react-jsx",
+//         "moduleResolution": "node",
+//         "allowSyntheticDefaultImports": true,
+//         "esModuleInterop": true,
+//         "resolveJsonModule": true,
+//         "isolatedModules": true,
+//         "noEmit": true,
+//         "strict": true,
+//         "skipLibCheck": true
+//     },
+//     "include": [
+//         "src"
+//     ]
+// }
+// {
+//     "compilerOptions": {
+//         "target": "ESNext",
+//         "module": "ESNext",
+//         "jsx": "react-jsx", // Important
+//         "moduleResolution": "node",
+//         "esModuleInterop": true,
+//         "skipLibCheck": true,
+//         "isolatedModules": false,
+//         "resolveJsonModule": true,
+//         "allowSyntheticDefaultImports": true,
+//         "forceConsistentCasingInFileNames": true,
+//         "strict": true,
+//         "noEmit": true,
+//         "lib": [
+//             "DOM",
+//             "ESNext"
+//         ], // Important for JSX and browser types
+//         "types": [
+//             "react",
+//             "react-dom"
+//         ] // Optional: Ensures JSX namespace is available
+//     },
+//     "include": [
+//         "src"
+//     ]
+// }
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "jsx": "react-jsx",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "isolatedModules": false,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "types": [
+            "react",
+            "react-dom"
+        ],
+        // 👇 Add these for types
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "declarationDir": "dist/types",
+        "outDir": "dist",
+        "noEmit": false
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
